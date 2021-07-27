@@ -30,6 +30,7 @@ jinja2 = "*"
 aiofiles = "*"
 jwt = "*"
 gunicorn = "*"
+fastapi = {extras = ["all"], version = "*"}
 
 [dev-packages]
 
