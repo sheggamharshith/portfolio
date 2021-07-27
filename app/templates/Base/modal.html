@@ -70,14 +70,21 @@
         text-7xl
         space-y-14
         cursor-pointer
-        animate__animated animate__fadeIn animate__delay-1s
       "
     >
       <!--Body-->
-      <a class="hover:text-blue-400" href="#intro" onclick='toggleModal()' >Home</a>
-      <a class="hover:text-blue-400" href="#aboutme" onclick='toggleModal()'>About Me</a>
-      <a class="hover:text-blue-400" href="#projects" onclick='toggleModal()'>Projects</a>
-      <a class="hover:text-blue-400"href="#experience" onclick='toggleModal()'>Experience</a>
+      <a class="hover:text-blue-400" href="#intro" onclick="toggleModal()"
+        >Home</a
+      >
+      <a class="hover:text-blue-400" href="#aboutme" onclick="toggleModal()"
+        >About Me</a
+      >
+      <a class="hover:text-blue-400" href="#projects" onclick="toggleModal()"
+        >Projects</a
+      >
+      <a class="hover:text-blue-400" href="#experience" onclick="toggleModal()"
+        >Experience</a
+      >
     </div>
   </div>
 </div>
@@ -119,6 +126,4 @@
     modal.classList.toggle("pointer-events-none");
     body.classList.toggle("modal-active");
   }
-
- 
 </script>

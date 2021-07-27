@@ -1,23 +1,26 @@
 <div
-  class="text-blueGray-700  justify-center items-center flex flex-col"
-  id="projects" 
+  class="text-blueGray-700 justify-center items-center flex flex-col"
+  id="projects"
 >
-  <div class=" max-w-7xl gap-14 flex flex-col">
-      <div
-    class="
-      border-b-2 border-gray-600
-      text-4xl
-      font-medium
-      w-full    
-      p-2
-    "
-  >
-    PROJECTS
-  </div>
+  <div class="max-w-7xl gap-14 flex flex-col">
+    <div class="border-b-2 border-gray-600 text-4xl font-medium w-full p-2">
+      PROJECTS
+    </div>
     <div class="flex flex-wrap mb-12 text-left items-stretch items-center">
       {% for project in projects %}
-      <div class="w-full p-2 mx-auto lg:w-3/12">
-        <div class="border border-gray-900 bg-blueGray-50 hover:shadow-xl">
+      <div class="w-full p-2 mx-auto lg:w-3/12" data-aos="fade-in"  data-aos-duration="3000">
+        <div
+          class="
+            border border-gray-900
+            bg-blueGray-50
+            hover:shadow-xl
+            transition
+            duration-500
+            ease-in-out
+            transform
+            hover:-translate-y-1 hover:scale-110
+          "
+        >
           <img class="object-cover object-center w-full h-80 " src =
           '{{url_for('static' , path=project.main_img )}}' alt="project">
           <div class="p-4 lg:p-8 bg-blueGray-50">
