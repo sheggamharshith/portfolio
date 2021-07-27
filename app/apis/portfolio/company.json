@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Mutual Mobile",
+    "logo": "images/company/mutual_mobile.svg",
+    "position": "Associate Engineer",
+    "from": "2021",
+    "to": "Present",
+    "info": "Meaning for Work Life Balance, Such a good working culture , phase where I explored my self",
+    "technologies": ["Python","Django","React JS","Web Development"]
+  },
+
+  {
+    "name": "Aptagrim",
+    "logo": "images/company/aptagrim.png",
+    "position": "Python Developer Intern",
+    "from": "2020",
+    "to": "2021",
+    "info": "Bulding products that has some purpose, value and ethics , more into python after this",
+    "technologies":  ["Python","Django","React JS" , "AI Development"]
+  },
+
+  {
+    "name": "Bigdatamatica",
+    "logo": "images/company/bigdatamatoca.png",
+    "position": "Chat Bot Developer",
+    "from": "2020",
+    "to": "2020",
+    "info": "First exposure to software world !! , learning basics to late night client calls",
+    "technologies":  ["Python","Django","React JS","Rasa","NLP","Web Development"]
+  },
+
+  {
+    "name": "Krs Group",
+    "logo": "images/company/image.png",
+    "position": "Computer Vision ",
+    "from": "2019",
+    "to": "2020",
+    "info": "Roller Coaster such a wonderfull jounery, building products that saves life , one-word  life time opportunity",
+    "technologies":  ["Python","Django","React JS","Openv CV","IOT" ,"Ladder Logics"]
+  }
+]

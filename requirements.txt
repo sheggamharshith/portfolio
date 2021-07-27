@@ -37,5 +37,10 @@ starlette==0.13.6
 uvicorn==0.12.2
     # via -r requirements.in
 
+
+
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
+
+aiofiles==0.7.0
+Jinja2==3.0.1

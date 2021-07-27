@@ -1,8 +1,13 @@
+# fastapi
 from fastapi import FastAPI
-from starlette.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
+# app core
 from app.core import auth
 from app.routes import views
+
+# 3rd party imports 
+from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
@@ -17,3 +22,7 @@ app.add_middleware(
 
 app.include_router(auth.router)
 app.include_router(views.router)
+
+
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+

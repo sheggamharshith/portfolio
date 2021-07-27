@@ -1,25 +1,53 @@
-from __future__ import annotations
+from fastapi import  Request, APIRouter
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 
-from fastapi import APIRouter, Depends
+import json 
 
-from app.apis.users.mainmod import main_func as main_func_a
-from app.apis.portfolio.mainmod import main_func as main_func_b
-from app.core.auth import get_current_user
+
 
 router = APIRouter()
 
 
-@router.get("/api_a/{num}", tags=["api_a"])
-async def view_a(
-    num: int,
-    auth: Depends = Depends(get_current_user),
-) -> dict[str, int]:
-    return main_func_a(num)
+templates = Jinja2Templates(directory="app/templates")
 
 
-@router.get("/api_b/{num}", tags=["api_b"])
-async def view_b(
-    num: int,
-    auth: Depends = Depends(get_current_user),
-) -> dict[str, int]:
-    return main_func_b(num)
+@router.get("/", response_class=HTMLResponse)
+def read_item(request: Request):
+
+    projects_file = open('app/apis/portfolio/projectsInfo.json')
+    company_file = open('app/apis/portfolio/company.json')
+
+    return templates.TemplateResponse(
+        "home_page.html",
+        {
+            "projects": json.load(projects_file),
+            'companies': json.load(company_file),
+            "request": request,
+        },
+    )
+
+@router.get("/project/{id}", response_class=HTMLResponse)
+def read_item(request: Request,id:int):
+
+    try:
+        projects_file = open('app/apis/portfolio/projectsInfo.json')
+        project = json.load(projects_file)[id]
+        return templates.TemplateResponse(
+            "project_info.html",
+            {
+                "project": project,
+                "request": request,
+                'id':id
+            }
+        )
+    except IndexError as e:
+        return templates.TemplateResponse(
+            "project_info.html",
+            {
+                "request": request,
+                "error":"404 Not Found"
+            }
+        )
+
+

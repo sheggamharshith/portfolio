@@ -1,0 +1,76 @@
+<div
+  class="text-blueGray-700  justify-center items-center flex flex-col"
+  id="projects" 
+>
+  <div class=" max-w-7xl gap-14 flex flex-col">
+      <div
+    class="
+      border-b-2 border-gray-600
+      text-4xl
+      font-medium
+      w-full    
+      p-2
+    "
+  >
+    PROJECTS
+  </div>
+    <div class="flex flex-wrap mb-12 text-left items-stretch items-center">
+      {% for project in projects %}
+      <div class="w-full p-2 mx-auto lg:w-3/12">
+        <div class="border border-gray-900 bg-blueGray-50 hover:shadow-xl">
+          <img class="object-cover object-center w-full h-80 " src =
+          '{{url_for('static' , path=project.main_img )}}' alt="project">
+          <div class="p-4 lg:p-8 bg-blueGray-50">
+            <h2
+              class="
+                mb-8
+                text-xs
+                font-semibold
+                tracking-widest
+                text-black
+                uppercase
+                title-font
+              "
+            >
+              {{project.type}}
+            </h2>
+            <h1
+              class="
+                mx-auto
+                mb-4
+                text-2xl
+                font-medium
+                leading-none
+                tracking-tighter
+                text-black
+                lg:text-3xl
+                title-font
+              "
+            >
+              {{project.short_info}}
+            </h1>
+          </div>
+          <div class="p-3">
+            <a
+              href="/project/{{project.id}}"
+              class="
+                border border-gray-900
+                p-2
+                inline-flex
+                items-center
+                mt-auto
+                text-black
+                lg:mb-0
+                hover:text-white hover:bg-gray-900
+              "
+              title="Read Full Article"
+            >
+              More Info
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

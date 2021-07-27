@@ -7,9 +7,12 @@ services:
       - .env
     build:
       context: ./
+      args:
+        script: /start-reload.sh
       dockerfile: Dockerfile
       labels:
         - fastapi-nano
+    command: ["/start-reload.sh"]
     volumes:
         - .:/code
     ports:

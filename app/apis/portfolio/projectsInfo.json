@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "type": "Robotics",
+    "short_info": "Six-Axis Industrial Robotic Arm",
+    "long_info": "The robotic arm can perform a wide variety of functions and perform tasks where humans can’t go. In space as well as in vacuum metallic parts especially which are those subjected to friction especially gears and bearings wear out very fast. The Whole project was built from scratch level giving my team immense learning and working experience \n \n \n \n \n \n For me, this project is a roller coaster from exploring different technologies such as Ros, Arduino. Raspberry pie., and to experiencing electric shock and smoke effect where the whole dedication was put to finish this project see my project gallery for my project journey",
+    "main_img": "images/robotics/robotic_arm_main.jpg",
+    "blog_img": "images/robotics/robotic-parts.jpg",
+    "gallery": [
+      "images/robotics/robotic arm copy.gif",
+      "images/robotics/3d-printer.png",
+      "images/robotics/me-robotics.jpg",
+      "images/robotics/parts-robotics.jpg",
+      "images/robotics/robotic arm.gif",
+      "images/robotics/robotic arm.jpg",
+      "images/robotics/robotic_arm_main.jpg",
+      "images/robotics/robotic-parts.jpg",
+      "images/robotics/robotics_wire.jpg"
+    ],
+    "badges": [
+      "images/logos/ros_logo.png",
+      "images/logos/arduino.png",
+      "images/logos/python.jpeg",
+      "images/logos/RPi-Logo-Stacked-PRINT.png"
+    ]
+  },
+  {
+    "id": 1,
+    "type": "Computer Vision",
+    "short_info": "Identifing Industrial TMT Rods",
+    "long_info": "",
+    "main_img": "images/tmt_rods/tmt_main.png",
+    "blog_img": "images/tmt_rods/tmt_main.png",
+    "gallery": [
+      "images/tmt_rods/IMG_20191010_143316.jpg",
+      "images/tmt_rods/tmt_black.png",
+      "images/tmt_rods/tmt_canny_edge.png",
+      "images/tmt_rods/tmt_historgram.png",
+      "images/tmt_rods/tmt_rgb.png",
+      "images/tmt_rods/tmt_size_fail.png",
+      "images/tmt_rods/tmt_main.png"
+    ],
+    "badges": [
+      "images/logos/opencv.png",
+      "images/logos/python.jpeg",
+      "images/logos/RPi-Logo-Stacked-PRINT.png"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Mechtronics",
+    "short_info": "Anti-Collision of Tower-Cranes",
+    "long_info": "",
+    "main_img": "images/anti-collision/anti-collision.jpg",
+    "blog_img": "images/anti-collision/anti-collision.jpg",
+    "gallery": [
+      "images/anti-collision/IMG_20191022_105915.jpg",
+      "images/anti-collision/anti-collsion.jpg",
+      "images/anti-collision/anti-collision.jpg"
+    ],
+    "badges": [
+      "images/logos/RPi-Logo-Stacked-PRINT.png",
+      "images/logos/ros_logo.png"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Chat-Bot Development",
+    "short_info": "Chat-Bot SAAS Rasa Framework",
+    "long_info": "",
+    "main_img": "images/chatbot/chatbot.png",
+    "blog_img": "images/chatbot/chatbot.png",
+    "gallery": [],
+    "badges": [
+      "images/logos/rasa.png",
+      "images/logos/python.jpeg"
+    ]
+  }
+]
