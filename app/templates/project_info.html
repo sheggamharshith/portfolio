@@ -15,29 +15,24 @@
 
   <div class="mx-auto bg-gray-900">
     <img class=" object-scale-down md:object-cover md:object-center w-full h-80
-    " src = '{{url_for('static' , path=project.blog_img )}}' alt="blog">
+    " src='{{url_for('static' , path=project.blog_img )}}' alt="blog">
   </div>
 
-  <div class="mx-auto  my-5 flex flex-wrap gap-x-4">
-    {% for badge in project.badges %} <img class=" h-5 md:h-10 object-scale-down " src =
-    '{{url_for('static' , path=badge)}}' alt="blog" /> {% endfor %}
+  <div class="mx-auto my-5 flex flex-wrap gap-x-4">
+    {% for badge in project.badges %} <img class=" h-5 md:h-10 object-scale-down
+    " src='{{url_for('static' , path=badge)}}' alt="blog" /> {% endfor %}
   </div>
 
   <div class="border-b-2 border-black my-5 text-2xl font-medium">Info</div>
-  <div class="mx-auto my-5 text-xl text-justify">
-    <p>{{project.long_info}}</p>
-  </div>
-  <div class="border-b-2 border-black my-5 text-2xl font-medium">
-    Gallery
-  </div>
-  <div class='mx-auto flex flex-wrap gap-1  justify-evenly'>
-  {% for image in  project.gallery %}
-   <img class="object-scale-down w-1/4 h-1/5 border border-black flex-grow " src =
-    '{{url_for('static' , path=image)}}' alt="project" />
-  
-  {% endfor %}
-      
-      
+  <div
+    class="mx-auto my-5 text-md md:text-lg text-justify"
+    id="project-info"
+  ></div>
+  <div class="border-b-2 border-black my-5 text-2xl font-medium">Gallery</div>
+  <div class="mx-auto flex flex-wrap gap-1 justify-evenly items-stretch">
+    {% for image in project.gallery %} <img class="object-scale-down w-1/4 h-1/5
+    border border-black flex-grow " src='{{url_for('static' , path=image)}}'
+    alt="project" /> {% endfor %}
   </div>
 </div>
 
@@ -45,4 +40,12 @@
 
 <div class="px-4 py-24 mx-auto max-w-7xl text-center text-8xl">{{error}}</div>
 
-{% endif %} {% endblock body %}
+{% endif %} {% endblock body %} {% block customScript %}
+
+<script>
+  var projectElemet = document.getElementById("project-info");
+  var parser = new DOMParser();
+  var doc = parser.parseFromString("{{project.long_info}}", "text/html");
+  projectElemet.innerHTML = doc.body.innerText;
+</script>
+{% endblock customScript %}

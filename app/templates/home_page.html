@@ -1,8 +1,10 @@
 {% extends 'Base/layout.html' %} {% block body %}
 
-<div class="h-screen flex" id="home">{%include 'intro.html' %}</div>
+<div class="md:h-screen flex" id="home">{%include 'intro.html' %}</div>
 <div class="w-full" id="home">{%include 'about_me.html' %}</div>
-<div class="w-full" id="projects">{% include 'projects.html'%}</div>
-<div class="w-full" id="projects">{% include 'experince.html'%}</div>
+<div class="w-full" id="projects"> {% include 'projects.html'%} </div>
+<div class="w-full" id="experince"> {% include 'experince.html'%} </div>
+<div class="w-full" id="experince"> {% include 'contact_form.html'%} </div>
+
 
 {% endblock body %}

@@ -1,19 +1,12 @@
-<div
-  class="border-b-2 border-gray-600 text-4xl font-medium mx-auto max-w-7xl p-2"
-  id="experience"
->
-  EXPERIENCE
-</div>
+<div class='flex flex-col mx-auto max-w-7xl gap-10 '>
+  <div class="border-b-2 border-gray-600 text-4xl font-medium  p-2" id="experience">
+    EXPERIENCE
+  </div>
 
-<div class="mx-auto max-w-7xl p-4 my-10 flex flex-wrap gap-10 justify-center">
-  {% for company in companies %}
-  <div
-    class="my-4 border border-black hover:shadow-xl md:w-2/5"
-   data-aos="fade-in"
-   data-aos-duration="3000"
-  >
-    <div
-      class="
+  <div class=" flex flex-wrap gap-10 w-full p-4 justify-evenly">
+    {% for company in companies %}
+    <div class="my-4 border border-black hover:shadow-xl md:w-5/12" data-aos="fade-in" data-aos-duration="3000">
+      <div class="
         p-6
         text-center
         transition
@@ -21,15 +14,12 @@
         ease-in-out
         transform
         hover:-translate-y-1 hover:scale-110
-      "
-     
-    >
-      <img alt="team" class=" flex-shrink-0 object-scale-down bg-white w-24 h-24
+      ">
+        <img alt="team" class=" flex-shrink-0 object-scale-down bg-white w-24 h-24 border
       shadow-lg mx-auto -mt-12 rounded-full aboslute " src='{{url_for('static' ,
       path=company.logo )}}' />
 
-      <h2
-        class="
+        <h2 class="
           pt-4
           mb-8
           text-xs
@@ -38,44 +28,40 @@
           text-black
           uppercase
           title-font
-        "
-      >
-        {{company.name}}
-        <p class="text-gray-500">{{company.from}} - {{company.to}}</p>
-      </h2>
-      <h4
-        class="
+        ">
+          {{company.name}}
+          <p class="text-gray-500">{{company.from}} - {{company.to}}</p>
+        </h2>
+        <h4 class="
           mb-8
           text-2xl
-          font-semibold
+          font-medium
           leading-none
           tracking-tighter
           text-black
           lg:text-3xl
           title-font
-        "
-      >
-        {{company.position}}
-      </h4>
-    </div>
-    <div class="border-b-2 border-black py-2 mx-4 text-left font-semibold">
-      Testimonial
-    </div>
-    <p
-      class="mb-3 text-base text-left text-blueGray-500 p-2 px-4 leading-blend"
-    >
-      {{company.info}}
-    </p>
-    <div class="border-b-2 border-black py-2 mx-4 font-semibold">
-      Technology Stack
-    </div>
-    <div class="flex p-4 gap-4 flex-wrap">
-      {% for technology in company.technologies %}
-      <div class="border border-black p-2 hover:bg-black hover:text-white">
-        {{technology}}
+        ">
+          {{company.position}}
+        </h4>
       </div>
-      {% endfor %}
+      <div class="border-b-2 border-black py-2 mx-4 text-left font-semibold">
+        Testimonial
+      </div>
+      <p class="mb-3 text-base text-left text-blueGray-500 p-2 px-4 leading-blend">
+        {{company.info}}
+      </p>
+      <div class="border-b-2 border-black py-2 mx-4 font-semibold">
+        Technology Stack
+      </div>
+      <div class="flex p-4 gap-4 flex-wrap">
+        {% for technology in company.technologies %}
+        <div class="border border-black p-2 hover:bg-black hover:text-white">
+          {{technology}}
+        </div>
+        {% endfor %}
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
