@@ -66,8 +66,8 @@
   {
     "id": 3,
     "type": "Chat-Bot Development",
-    "short_info": "Chat-Bot SAAS Rasa Framework",
-    "long_info": "",
+    "short_info": "Chat-Bot",
+    "long_info": "Rasa on a serious only open source AI NLP framework that has potential to scale on enterprise level. I have tested worked practically on many other NLP framework, but this is killer in this area. I built more than 2 chatbot actively served more than 20k users",
     "main_img": "images/chatbot/chatbot.png",
     "blog_img": "images/chatbot/chatbot.png",
     "gallery": [],

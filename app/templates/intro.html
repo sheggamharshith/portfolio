@@ -1,6 +1,5 @@
 <div class="m-auto" id="intro">
-  <div
-    class="
+  <div class="
       container
       flex flex-col-reverse
       items-center
@@ -10,12 +9,8 @@
       md:flex-row
       lg:px-28
       gap-y-20
-    "
-    data-aos="fade-in"
-    data-aos-duration="3000"
-  >
-    <div
-      class="
+    " data-aos="fade-in" data-aos-duration="3000">
+    <div class="
         flex flex-col
         items-start
         w-full
@@ -26,10 +21,8 @@
         md:w-1/2
         xl:mr-20
         md:pr-24 md:mb-0
-      "
-    >
-      <p
-        class="
+      ">
+      <p class="
           mb-8
           text-4xl
           font-bold
@@ -37,23 +30,19 @@
           text-left text-black
           lg:text-7xl
           title-font
-        "
-      >
+        ">
         Hey there I'm, Sheggam Harshith
       </p>
-      <p
-        class="
+      <p class="
           mb-8
           text-base
           leading-relaxed
            text-xl
-        "
-      >
+        ">
         Born chef, Grown by maths, Taught coding, Developed as an Engineer
       </p>
       <div class="flex gap-5">
-        <button
-          class="
+        <a href="https://www.linkedin.com/in/harshith-sheggam-53aa9a123/" class="
             flex flex-row
             items-center
             space-x-4
@@ -68,13 +57,11 @@
             hover:text-white hover:bg-black
             text-xl
             animate__animated animate__fadeIn
-          "
-        >
+          ">
           Hire Me
-        </button>
+        </a>
 
-        <button
-          class="
+        <a href="{{ url_for('static' , path='Resume/Harshith_sheggam_resume_6302953723.pdf') }}" class="
             flex flex-row
             items-center
             space-x-4
@@ -88,25 +75,18 @@
             modal-open
             hover:text-white hover:bg-black
             text-xl
-          "
-        >
+          " download >
           Resume
-        </button>
+        </a>
       </div>
     </div>
     <div class="w-full lg:w-5/6 lg:max-w-md md:w-1/2">
-      <img
-        class="
+      <img class="
           object-cover object-center
           rounded-lg
           animate__animated animate__fadeIn animate__delay-1s
-        "
-        alt="hero"
-        src="{{ url_for('static' , path='/svg/download.png') }}"
-      />
+        " alt="hero" src="{{ url_for('static' , path='/svg/download.png') }}" />
     </div>
   </div>
   <div class="block"></div>
 </div>
-
-
