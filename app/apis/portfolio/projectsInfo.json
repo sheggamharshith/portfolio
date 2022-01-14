@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 0,
     "type": "Robotics",
     "short_info": "Six-Axis Industrial Robotic Arm",
@@ -65,6 +64,26 @@
   },
   {
     "id": 3,
+    "type": "Web Development",
+    "short_info": "Platform to share post/voice",
+    "long_info": "It's an open source platform for voice sharing. The major concept behind making this is to demonstrate my capabilities in MERN stack application. It also enables post sharing with a variety of features such as chat, friend request. I created the entire design from scratch hope you liked it. It covers subjects like socket io, rest api, and kafka. Please follow the link below to see a demo.",
+    "main_img": "images/rasa/rasa5.png",
+    "blog_img": "images/rasa/rasa6.jpeg",
+    "gallery": [
+      "images/rasa/rasa1.jpeg",
+      "images/rasa/rasa2.jpeg",
+      "images/rasa/rasa3.jpeg",
+      "images/rasa/rasa4.jpeg",
+      "images/rasa/rasa5.png",
+      "images/rasa/rasa7.png"
+    ],
+    "badges": [
+      "images/rasa/mern_badge.png"
+    ],
+    "demo":"True"
+  },
+  {
+    "id": 4,
     "type": "Chat-Bot Development",
     "short_info": "Chat-Bot",
     "long_info": "Rasa on a serious only open source AI NLP framework that has potential to scale on enterprise level. I have tested worked practically on many other NLP framework, but this is killer in this area. I built more than 2 chatbot actively served more than 20k users",

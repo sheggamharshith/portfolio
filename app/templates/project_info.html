@@ -1,14 +1,10 @@
 {% extends 'Base/layout.html' %} {% block body %} {% if not error %}
 <div class="px-4 py-24 mx-auto max-w-7xl">
   <div class="w-full mx-auto mb-12 text-center md:w-2/3">
-    <p
-      class="mb-3 text-xs font-semibold tracking-wider text-gray-500 uppercase"
-    >
+    <p class="mb-3 text-xs font-semibold tracking-wider text-gray-500 uppercase">
       {{project.type}}
     </p>
-    <h1
-      class="mb-3 text-4xl font-bold text-gray-900 md:leading-tight md:text-5xl"
-    >
+    <h1 class="mb-3 text-4xl font-bold text-gray-900 md:leading-tight md:text-5xl">
       {{project.short_info}}
     </h1>
   </div>
@@ -18,29 +14,66 @@
     " src='{{url_for('static' , path=project.blog_img )}}' alt="blog">
   </div>
 
-  <div class="mx-auto my-5 flex flex-wrap gap-x-4">
-    {% for badge in project.badges %} <img class=" h-5 md:h-10 object-scale-down
+  <div class="mx-auto my-5 flex justify-between">
+
+    <div class='flex flex-wrap gap-x-4'>
+      {% for badge in project.badges %} <img class=" h-5 md:h-10 object-scale-down
     " src='{{url_for('static' , path=badge)}}' alt="blog" /> {% endfor %}
+    </div>
+    {% if project.demo %} <a href="http://137.184.68.66/" class="
+      border border-gray-900
+      p-2
+      inline-flex
+      items-center
+      mt-auto
+      text-black
+      lg:mb-0
+      animate-bounce
+      hover:text-white hover:bg-gray-900
+    " title="Read Full Article">
+      View Demo
+    </a> {% endif %}
   </div>
 
   <div class="border-b-2 border-black my-5 text-2xl font-medium">Info</div>
-  <div
-    class="mx-auto my-5 text-md md:text-lg text-justify"
-    id="project-info"
-  ></div>
+  <div class="mx-auto my-5 text-md md:text-lg text-justify" id="project-info"></div>
   <div class="border-b-2 border-black my-5 text-2xl font-medium">Gallery</div>
   <div class="mx-auto flex flex-wrap gap-1 justify-evenly items-stretch">
     {% for image in project.gallery %} <img class="object-scale-down w-1/4 h-1/5
-    border border-black flex-grow " src='{{url_for('static' , path=image)}}'
-    alt="project" /> {% endfor %}
+    border border-black flex-grow " src='{{url_for('static' , path=image)}}' alt="project" /> {% endfor %}
   </div>
+
+  {% if project.demo %} 
+  
+  <div class='mt-10'></div>
+  
+  <a href="http://137.184.68.66/" class="
+  border border-gray-900
+  p-2
+  inline-flex
+  items-center
+  max-w-1/2
+  w-full
+  text-black
+  lg:mb-0
+  animate-bounce
+  hover:text-white hover:bg-gray-900
+  flex 
+  justify-center
+" title="View Demo">
+   View Demo
+  </a> {% endif %}
 </div>
 
 {% else %}
 
 <div class="px-4 py-24 mx-auto max-w-7xl text-center text-8xl">{{error}}</div>
 
-{% endif %} {% endblock body %} {% block customScript %}
+{% endif %} {% endblock body %}
+
+
+
+{% block customScript %}
 
 <script>
   var projectElemet = document.getElementById("project-info");
