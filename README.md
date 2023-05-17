@@ -1,1 +1,1 @@
-personal Portfolio website 
+Updated readme for the fly dev new version deployment 
