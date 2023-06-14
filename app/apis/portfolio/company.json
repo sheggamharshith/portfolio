@@ -1,12 +1,22 @@
 [
   {
+    "name": "FairShares",
+    "logo": "images/company/fairshares.png",
+    "position": "Senior Engineer",
+    "from": "2022",
+    "to": "2023",
+    "info": "FairShares is Dividend Tax saving company. Helps people in saving tax on dividend payout",
+    "technologies": ["Python", "Django", "React JS", "Web Development", "AWS"]
+  },
+
+  {
     "name": "Mutual Mobile",
     "logo": "images/company/mutual_mobile.svg",
     "position": "Associate Engineer",
     "from": "2021",
     "to": "Present",
-    "info": "Meaning for Work Life Balance, Such a good working culture , phase where I explored my self",
-    "technologies": ["Python","Django","React JS","Web Development"]
+    "info": "Mutual Mobile is premium consultant company. worked with leading clients such as under-armor colorx",
+    "technologies": ["Python", "Django", "React JS", "Web Development"]
   },
 
   {
@@ -15,8 +25,8 @@
     "position": "Python Developer Intern",
     "from": "2020",
     "to": "2021",
-    "info": "Bulding products that has some purpose, value and ethics , more into python after this",
-    "technologies":  ["Python","Django","React JS" , "AI Development"]
+    "info": "Aptagrim Helps in building ai products which has purpose and impact in society",
+    "technologies": ["Python", "Django", "React JS", "AI Development"]
   },
 
   {
@@ -25,8 +35,15 @@
     "position": "Chat Bot Developer",
     "from": "2020",
     "to": "2020",
-    "info": "First exposure to software world !! , learning basics to late night client calls",
-    "technologies":  ["Python","Django","React JS","Rasa","NLP","Web Development"]
+    "info": "BigDatamatica helps in building the chatbot for enterprise application",
+    "technologies": [
+      "Python",
+      "Django",
+      "React JS",
+      "Rasa",
+      "NLP",
+      "Web Development"
+    ]
   },
 
   {
@@ -36,6 +53,13 @@
     "from": "2019",
     "to": "2020",
     "info": "Roller Coaster such a wonderfull jounery, building products that saves life , one-word  life time opportunity",
-    "technologies":  ["Python","Django","React JS","Openv CV","IOT" ,"Ladder Logics"]
+    "technologies": [
+      "Python",
+      "Django",
+      "React JS",
+      "Openv CV",
+      "IOT",
+      "Ladder Logics"
+    ]
   }
 ]
